@@ -8,9 +8,8 @@
 	border: 0;
 }
 .container {
-	margin-top: 0px;/*
-	margin-left: 10px;
-	margin-right: 10px;*/
+	margin-top: 0px;
+	margin-bottom: 20px;
 }
 .navbar-brand h1 {
 	color: #000;/*color black*/
@@ -58,11 +57,14 @@ body {
 	margin-left: 10px;
 	margin-right: 10px;
 }
-#chicken-tile {
+h3 {
 	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 0px;
 	margin-bottom: 10px;
 	text-align: center;
 }
+
 /*End Body*/
 /*Desktop device*/
 @media(min-width: 992px) {
@@ -75,8 +77,25 @@ body {
 	#collapsable-nav {
 		display: none !important;
 	}
+	#chick-div {
+		margin-bottom: 20px;
+	}
+	#beef-div {
+		margin-bottom: 20px;
+	}
+	#sushi-div{
+		width: 100%;
+	}
 }
 /*Mobile device*/
 @media(max-width: 767px) {
-
+	#chick-div {
+		margin-bottom: 20px;
+	}
+	#beef-div {
+		margin-bottom: 20px;
+	}
+	#sushi-div {
+		margin-bottom: 20px;
+	}
 }
