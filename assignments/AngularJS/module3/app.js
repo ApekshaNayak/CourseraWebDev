@@ -29,7 +29,7 @@
 				controller.found = new Array();
 			}
 			else {
-				controller.found = MenuSearchService.getMatchedMenuItems(controller.searchDescription);
+				controller.found = MenuSearchService.getMatchedMenuItems(controller.searchDescription.toLowerCase());
 			}
 		};
 
