@@ -1,0 +1,70 @@
+
+<div class="signUp">
+  <h1>Sign Up</h1>
+
+  <fieldset ng-controller= "SignUpController as ctrl">    
+  <form class="form" name='regForm' novalidate>
+
+    <input class="inputColor" type="text" name="firstName" placeholder="Enter firstName"
+    ng-model="ctrl.user.firstName"
+    required
+    minlength="4"
+    ng-maxlength="10">
+    <span class="spanColor"
+    ng-if="(regForm.firstName.$error.minlength || regForm.firstName.$error.required) && regForm.firstName.$touched">
+    Username must be at least 4 characters long
+  </span>
+  <span class="spanColor" ng-if="regForm.firstName.$error.maxlength && regForm.firstName.$touched">
+    Username must not be longer than 10 characters
+  </span>
+  <br>
+
+  <input class="inputColor" type="text" name="lastName" placeholder="Enter lastName"
+  ng-model="ctrl.user.lastName"
+  required
+  minlength="4"
+  ng-maxlength="10">
+  <span class="spanColor" 
+  ng-if="(regForm.lastName.$error.minlength || regForm.lastName.$error.required) && regForm.lastName.$touched">
+  Username must be at least 4 characters long
+</span>
+<span class="spanColor" ng-if="regForm.lastName.$error.maxlength && regForm.lastName.$touched">
+  Username must not be longer than 10 characters
+</span>
+<br>
+
+<input class="inputColor" type="email" name="email" placeholder="Email"
+ng-model="ctrl.user.email"
+required>
+<span ng-if="regForm.email.$invalid && regForm.email.$touched">
+  Must be a valid email address: handle@domain format
+</span>
+<br>
+
+<input class="inputColor" type="text" name="phone" placeholder="Phone ###-###-####"
+ng-model="ctrl.user.phone"
+pattern="(\d{3})-(\d{3})-(\d{4})">
+<span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+  Phone must be in the format ###-###-####.
+</span>
+<br>
+
+<input class="inputColor" type="text" name="menuItem" placeholder="Please specify the menu number" 
+ng-model="ctrl.user.menuItem">
+<br>
+<button class="inputColor"
+ng-disabled="regForm.$invalid"
+ng-click="reg.submit()">Submit</button>
+
+<div style="margin-top: 10px;">
+  Form valid? {{ regForm.$valid }}
+</div>
+</form>
+</fieldset>
+
+<div id="info" ng-if="reg.completed">
+  Username: {{ reg.user.username}} <br>
+  Email: {{ reg.user.email}} <br>
+  Phone: {{ reg.user.phone }}
+</div>
+</div>

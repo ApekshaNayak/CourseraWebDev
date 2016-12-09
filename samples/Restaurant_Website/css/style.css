@@ -1,12 +1,12 @@
 body {
 	font: 16px;
 	color: #fff;
-	background-color: #61122f;
+	background-color: #40342f;
 	font-family: 'Oxygen', sans-serif;
 }
 /*Header start*/
 #header-nav{
-	background-color: #f6b319;
+	background-color: #ba3425;
 	border-radius: 0;
 	border: 0;
 }
@@ -24,7 +24,7 @@ body {
 
 .navbar-brand h1 {/*Restaurant head name*/
 	font-family: 'Lora', serif;
-	color: #557c3e;
+	color: #e1e107;
 	font-size: 1.5em;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
@@ -53,7 +53,7 @@ body {
 }
 
 #nav-list a {
-	color: #951c49;
+	color: #c7c704;
 	text-align: center;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 #phone div {/*We deliver*/
-	color: #557c3e;
+	color: #c7c704;
 	text-align: right;
 	padding-right:15px;
 }
@@ -120,7 +120,7 @@ body {
 /* END FOOTER */
 /*Home page*/
 .container .jumbotron {
-	box-shadow: 0 0 50px #3f0c1f;
+	box-shadow: 0 0 0 #3f0c1f;
 	border: 2px solid #3f0c1f;
 }
 #menu-tile, #specials-tile, #map-tile {
@@ -297,8 +297,8 @@ h3.menu-item-title {
 		margin: 0 20px;
 		padding: 10px;
 		border: 2px solid #fff;
-		background-color: #f6b319;
-		color: #951c49;
+		background-color: #ba3425;
+		color: #c7c704;
 	}
 	#xs-deliver {
 		margin-top: 5px;
